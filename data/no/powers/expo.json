@@ -1,0 +1,30 @@
+{
+    "name": "Exposed",
+    "description": "When you are not invisible, your attacks are weak and you are slow",
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effects": [
+            {
+                "effect": "minecraft:weakness",
+                "duration": 10,
+                "amplifier": 0,
+                "show_particles": false,
+                "show_icon": true
+            },
+            {
+                "effect": "minecraft:slowness",
+                "duration": 10,
+                "amplifier": 1,
+                "show_particles": false,
+                "show_icon": true
+            }
+        ]
+    },
+    "interval": 1,
+    "condition": {
+        "type": "origins:status_effect",
+        "effect": "minecraft:invisibility",
+        "inverted": true
+    }
+}

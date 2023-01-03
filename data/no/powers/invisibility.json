@@ -1,0 +1,44 @@
+{
+    "name": "Shadow form",
+    "description": "You become invisible for 10 seconds. (11 second cooldown)",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:apply_effect",
+                "effects": [
+                    {
+                        "effect": "minecraft:invisibility",
+                        "duration": 200,
+                        "amplifier": 0,
+                        "show_particles": false,
+                        "show_icon": true
+                    },
+                    {
+                        "effect": "minecraft:speed",
+                        "duration": 40,
+                        "amplifier": 2,
+                        "show_particles": false,
+                        "show_icon": true
+                    }
+                ]
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "particle minecraft:campfire_cosy_smoke ~ ~ ~ 1 0.7 1 0 100 force"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "playsound minecraft:block.stem.break master @a ~ ~ ~ 1 2"
+            }
+        ]
+            
+    },
+    "cooldown": 220,
+    "hud_render": {
+        "should_render": true,
+        "bar_index": 2
+    },
+    "key": "primary"
+}

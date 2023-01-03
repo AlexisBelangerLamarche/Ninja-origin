@@ -1,0 +1,16 @@
+{
+    "name": "Ninja",
+    "description": "Become the shadows",
+    "powers": [
+        "no:invisibility",
+        "no:sneaky",
+        "no:expo",
+        "no:last",
+        "no:stop"
+    ],
+    "icon": {
+        "item": "minecraft:coal"
+    },
+    "order": 5,
+    "impact": 3
+}

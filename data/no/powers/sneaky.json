@@ -1,0 +1,20 @@
+{
+    "name": "Backstab",
+    "description": "When your invisible your attacks are empowered",
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:strength",
+            "duration": 20,
+            "amplifier": 2,
+            "show_particles": false,
+            "show_icon": true
+        }
+    },
+    "interval": 1,
+    "condition": {
+        "type": "origins:status_effect",
+        "effect": "minecraft:invisibility"
+    }
+}

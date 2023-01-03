@@ -1,0 +1,8 @@
+{
+    "hidden": true,
+    "type": "origins:self_action_on_hit",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "effect clear @s"
+    }
+}
