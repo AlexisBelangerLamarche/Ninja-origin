@@ -38,7 +38,7 @@
     "cooldown": 220,
     "hud_render": {
         "should_render": true,
-        "bar_index": 2
+        "bar_index": 0
     },
     "key": "primary"
 }
