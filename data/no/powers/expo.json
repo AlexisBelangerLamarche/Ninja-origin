@@ -11,13 +11,6 @@
                 "amplifier": 0,
                 "show_particles": false,
                 "show_icon": true
-            },
-            {
-                "effect": "minecraft:slowness",
-                "duration": 10,
-                "amplifier": 1,
-                "show_particles": false,
-                "show_icon": true
             }
         ]
     },
